@@ -1022,6 +1022,7 @@ describe('modules/platform/azure/index', () => {
         automergeStrategy
         ${'fast-forward'}
         ${'merge-commit'}
+        ${'merge-rebase'}
         ${'rebase'}
         ${'squash'}
       `(
@@ -1075,6 +1076,7 @@ describe('modules/platform/azure/index', () => {
         automergeStrategy | prMergeStrategy
         ${'fast-forward'} | ${GitPullRequestMergeStrategy.Rebase}
         ${'merge-commit'} | ${GitPullRequestMergeStrategy.NoFastForward}
+        ${'merge-rebase'} | ${GitPullRequestMergeStrategy.MergeRebase}
         ${'rebase'}       | ${GitPullRequestMergeStrategy.Rebase}
         ${'squash'}       | ${GitPullRequestMergeStrategy.Squash}
       `(
@@ -1727,6 +1729,7 @@ describe('modules/platform/azure/index', () => {
       automergeStrategy | prMergeStrategy
       ${'fast-forward'} | ${GitPullRequestMergeStrategy.Rebase}
       ${'merge-commit'} | ${GitPullRequestMergeStrategy.NoFastForward}
+      ${'merge-rebase'} | ${GitPullRequestMergeStrategy.MergeRebase}
       ${'rebase'}       | ${GitPullRequestMergeStrategy.Rebase}
       ${'squash'}       | ${GitPullRequestMergeStrategy.Squash}
     `(

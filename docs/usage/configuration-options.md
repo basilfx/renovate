@@ -262,6 +262,7 @@ You may choose from these values:
 - `auto`, Renovate decides how to merge
 - `fast-forward`, "fast-forwarding" the main branch reference, no new commits in the resultant tree
 - `merge-commit`, create a new merge commit
+- `merge-rebase`, create a new merge commit, but rebase the commits prior merging
 - `rebase`, rewrite history as part of the merge, but usually keep the individual commits
 - `squash`, flatten the commits that are being merged into a single new commit
 

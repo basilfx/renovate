@@ -195,6 +195,8 @@ export function mapMergeStrategy(
       return GitPullRequestMergeStrategy.Rebase;
     case 'merge-commit':
       return GitPullRequestMergeStrategy.NoFastForward;
+    case 'merge-rebase':
+      return GitPullRequestMergeStrategy.MergeRebase;
     case 'squash':
       return GitPullRequestMergeStrategy.Squash;
     default:

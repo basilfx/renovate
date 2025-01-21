@@ -361,6 +361,7 @@ export type MergeStrategy =
   | 'auto'
   | 'fast-forward'
   | 'merge-commit'
+  | 'merge-rebase'
   | 'rebase'
   | 'squash';
 
